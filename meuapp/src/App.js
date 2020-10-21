@@ -1,9 +1,12 @@
 import React from 'react';
 
 function App() {
+  const random = Math.random();
+  const active = true;
   return (
-    <div> Meu app
-    </div>
+    <>
+      <p className={active ? 'ativo' : ''}>{random}</p>
+    </>
   );
 }
 
