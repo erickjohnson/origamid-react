@@ -14,11 +14,16 @@ function App() {
     year: '2009'
   }
 
+  const Style = {
+    fontSize: '25px',
+    color: 'blue'
+  }
+
   return (
     <>
       {title}
       <p className={active ? 'ativo' : ''}>{random}</p>
-      <p>{showNameLastName('Johnson')}</p>
+      <p style={Style}>{showNameLastName('Johnson')}</p>
       <p>
         {car.marca} {car.year}
       </p>
