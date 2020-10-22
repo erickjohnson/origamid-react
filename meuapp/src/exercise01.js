@@ -27,7 +27,7 @@ function App() {
     ],
     ativa: false,
   };
-  const dados = mario;
+  const [dados, setDados] = React.useState(luana);
   
     const compraValores = dados.compras.map( compra => {
       return Number(compra.preco.replace('R$ ', ''));
@@ -49,6 +49,8 @@ function App() {
       <p>Situação: <span Style={dados.ativa? 'color:green' : 'color:red'}>{dados.ativa ? 'Ativo' : 'Inativo'}</span></p>
       <p>Total gasto: { totalCompras}</p>
       <p Style={ totalCompras > 10000 ? 'display:block' : 'display:none'}>Você está gastando muito</p>
+      <button onClick={() => setDados(mario)}>Mario</button>
+      <button onClick={() => setDados(luana)}>Luana</button>
     </div>
   )
 }
