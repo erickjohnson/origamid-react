@@ -1,12 +1,14 @@
 import React from 'react'
 
-const Titulo = (props) => {
-  return <h1>{props.texto}</h1>
+const Titulo = ({cor, texto, children}) => {
+  return <h1 style={{color:cor}}>{texto}, {children}</h1>
 }
 const props = () => {
   return (
     <div>
-      <Titulo texto='Titulo' />
+      <Titulo cor='red' texto='Titulo'>
+        <p>Texto children</p>
+      </Titulo>
     </div>
   )
 }
