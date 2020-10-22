@@ -1,11 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-import Array from './arrays'
+import ArrayExercise from './arrayExercise'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Array />
+    <ArrayExercise />
   </React.StrictMode>,
   document.getElementById('root')
 );
