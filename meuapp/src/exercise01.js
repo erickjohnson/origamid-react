@@ -37,18 +37,13 @@ function App() {
     const totalCompras = compraValores.reduce( (total, compra) => {
       return total + compra
     })
-    /*const comprasNumeros = compras( compra =>
-      Number(compra.preco.replace('R$ ', '')),
-    );*/
-    //console.log(comprasNumeros)
-    //const totalCompras = comprasNumeros.reduce((total, numero) => total + numero);
   
   return (<div>
       <p>Nome: {dados.cliente}</p>
       <p>Idade: {dados.idade}</p>
       <p>Situação: <span Style={dados.ativa? 'color:green' : 'color:red'}>{dados.ativa ? 'Ativo' : 'Inativo'}</span></p>
       <p>Total gasto: { totalCompras}</p>
-      <p Style={ totalCompras > 10000 ? 'display:block' : 'display:none'}>Você está gastando muito</p>
+      { totalCompras > 10000 && <p>Você está gastando muito</p>}
       <button onClick={() => setDados(mario)}>Mario</button>
       <button onClick={() => setDados(luana)}>Luana</button>
     </div>
