@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import ArrayExercise from './arrayExercise'
+import Components from './components';
 
 ReactDOM.render(
   <React.StrictMode>
-    <ArrayExercise />
+    <Components/>
   </React.StrictMode>,
   document.getElementById('root')
 );
