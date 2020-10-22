@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Input = ({id, label, ...props}) => {
+const Input = ({id, label, type, ...props}) => {
   return (
     <p>
       <label htmlFor={id}>{label}</label>
-      <input id={id} {...props} type="text"/>
+      <input id={id} {...props} type={type}/>
     </p>
   )
 }

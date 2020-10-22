@@ -5,9 +5,9 @@ import Input from './Input'
 const Form = () => {
   return (
     <form action="">
-      <Input id='name' label='Nome'/>
-      <Input id='password' label="Senha" required/>
-      <Button />
+      <Input id='name' label='Nome' type="text"/>
+      <Input id='password' label="Senha" type="password" required/>
+      <Button /> 
 
     </form>
   )
