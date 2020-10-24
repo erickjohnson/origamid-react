@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import Main from './UseStateChallenge/Main';
+import UseEffect from './UseEffect/UseEffect';
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <Main />
+    <UseEffect />
   </React.StrictMode>,
   document.getElementById('root')
 );
