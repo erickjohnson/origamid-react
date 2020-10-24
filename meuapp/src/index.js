@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
-import UseEffectEvents from './UseEffect/UseEffectEvents';
+import UseEffectChallenge from './UseEffect/UseEffectChallenge/UseEffectChallenge';
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <UseEffectEvents />
+    <UseEffectChallenge />
   </React.StrictMode>,
   document.getElementById('root')
 );
