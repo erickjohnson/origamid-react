@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import UseRefTimeout from './UseRef/UseRefTimeout';
+import UseContext from './UseContext/UseContext';
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <UseRefTimeout />
+    <UseContext />
   </React.StrictMode>,
   document.getElementById('root')
 );
