@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import UseRef from './UseRef/UseRef';
+import UseRefTimeout from './UseRef/UseRefTimeout';
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <UseRef />
+    <UseRefTimeout />
   </React.StrictMode>,
   document.getElementById('root')
 );
