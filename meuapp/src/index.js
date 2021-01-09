@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import UseContext from './UseContext/UseContext';
+import UseContext from './UseContextChallenge/UseContext';
 
 
 ReactDOM.render(
