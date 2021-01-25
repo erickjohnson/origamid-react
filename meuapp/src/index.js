@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './ChallengeForm/App'
+import App from './Select/App'
 
 
 ReactDOM.render(

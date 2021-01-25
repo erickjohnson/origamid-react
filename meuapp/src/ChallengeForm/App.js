@@ -13,11 +13,9 @@ function App() {
     estado: ''
   })
   const [fetchResponse, setFetchResponse] = React.useState(null)
-  const [error, setError] = React.useState(null)
 
   function handleSubmit(e){
     e.preventDefault()
-    console.log(form)
     fetch('https://ranekapi.origamid.dev/json/api/usuario',{
       method: 'POST',
       headers: {
@@ -26,8 +24,6 @@ function App() {
       body: JSON.stringify(form),
     }).then(response=> {
       setFetchResponse(response.status)
-    }).catch (error => {
-      setError('Error: ' + error.message)
     })
   }
 
